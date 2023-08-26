@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  max-width: 250px;
+  max-height: 400px;
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+i {
+  padding-top: 5px;
+}
+
+.card {
+  /* margin: 20px; Add some margin to the card */
+  padding: 15px;
+  border-radius: 20px;
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Add box shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Apply transition to smoothly animate scaling effect */
+  transition: transform 0.235s ease-in-out;
+}
+
+
+/* Hover scaling effect */
+.card:hover {
+  /* Apply desired scaling transformation */
+  transform: scale(1.02); /* Increase the scale factor as needed */
+}
+
+.card > img {
+  width: 100%;
+  height: 50%;
+}
+
+.card h3 {
+  padding: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.card span {
+  padding: 3px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  margin-left: 3px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  /* Add the following styles for truncating the content */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
